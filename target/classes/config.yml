@@ -1,9 +1,0 @@
-# example config
-
-header-message: "&f&lHeader"
-footer-message: "&f&lFooter"
-
-replacements:
-  ":smile:" : "😊"
-
-
