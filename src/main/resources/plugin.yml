@@ -1,5 +1,5 @@
 name: sunemoji
-version: '1.0'
+version: '1.1'
 main: io.github.skuffy808.sunemoji.Sunemoji
 api-version: '1.21'
 authors: [ Skuffy ]
@@ -14,4 +14,7 @@ commands:
 permissions:
   sunemoji.emojis:
     description: Allows the use of /emojis command
+    default: op
+  sunemoji.use:
+    description: Allows the use of the emoji replacement
     default: op

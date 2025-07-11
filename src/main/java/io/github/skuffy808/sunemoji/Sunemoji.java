@@ -44,7 +44,9 @@ public final class Sunemoji extends JavaPlugin implements Listener {
         for (Map.Entry<String, String> entry : emojiMap.entrySet()) {
             msg = msg.replace(entry.getKey(), entry.getValue());
         }
-        event.setMessage(msg); // Set updated message
+        if (event.getPlayer().hasPermission("sunemoji.use")) {
+            event.setMessage(msg); // Set updated message
+        }
     }
 
     @Override
